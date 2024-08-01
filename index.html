@@ -9,7 +9,7 @@
   <body>
     <main>
       <header>
-        <button class="new-game-btn">
+        <button class="new-game-btn" id="new-game-btn">
           <img
             src="https://em-content.zobj.net/thumbs/240/apple/325/pig-face_1f437.png"
             alt="New game"
@@ -18,25 +18,25 @@
         </button>
       </header>
       <section id="game-section">
-        <div class="player-card pl-current">
+        <div class="player-card pl-current" id="pl-0-card">
           <p class="pl-nickname" id="pl-nickname">Player 1</p>
-          <p class="pl-score" id="pl-score">0</p>
+          <p class="pl-score" id="pl-0-score">0</p>
           <div class="pl-current-score-block">
             <p class="pl-current-score-title">Current score:</p>
-            <p class="pl-current-score" id="pl-current-score">0</p>
+            <p class="pl-current-score" id="pl-0-current-score">0</p>
           </div>
         </div>
         <div class="center-block">
-          <img src="img/dice1.png" alt="" class="dice-img" />
+          <img src="img/dice1.png" alt="" class="dice-img" id="dice-img" />
           <div class="center-block-btns">
-            <button class="roll-dice-btn">
+            <button class="roll-dice-btn" id="roll-dice-btn">
               <img
                 src="https://em-content.zobj.net/thumbs/240/apple/325/game-die_1f3b2.png"
                 alt="Roll dice"
               />
               <p>Roll dice</p>
             </button>
-            <button class="left-score-btn">
+            <button class="left-score-btn" id="left-score-btn">
               <img
                 src="https://em-content.zobj.net/thumbs/240/apple/325/ok-hand_1f44c.png"
                 alt="Left score"
@@ -45,16 +45,17 @@
             </button>
           </div>
         </div>
-        <div class="player-card">
+        <div class="player-card" id="pl-1-card">
           <p class="pl-nickname" id="pl-nickname">Player 2</p>
-          <p class="pl-score" id="pl-score">0</p>
+          <p class="pl-score" id="pl-1-score">0</p>
           <div class="pl-current-score-block">
             <p class="pl-current-score-title">Current score:</p>
-            <p class="pl-current-score" id="pl-current-score">0</p>
+            <p class="pl-current-score" id="pl-1-current-score">0</p>
           </div>
         </div>
       </section>
       <footer></footer>
     </main>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
