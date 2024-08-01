@@ -17,6 +17,8 @@ let currentPlayerId;
 
 const LOST_DICE_ID = 1;
 
+startNewGame();
+
 function startNewGame() {
   currentPlayerId = getRandomIntd(0, 1);
   playersScores = [0, 0];
